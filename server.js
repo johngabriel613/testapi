@@ -5,7 +5,7 @@ import setSession from "./middlewares/sessionMiddleware.js";
 import router from "./routes/route.js";
 import dbConfig from "./config/db.js";
 const app = express();
-const PORT = 3000;
+const port = process.env.PORT || 5000
 
 
 const corsOptions = {
@@ -22,7 +22,7 @@ app.use('/api',router)
 
 
 app.listen(PORT, () => {
-  console.log(`server is connected to ${PORT}`)
+  console.log(`server is connected to ${port}`)
 })
 
 dbConfig()
