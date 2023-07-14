@@ -5,8 +5,7 @@ import setSession from "./middlewares/sessionMiddleware.js";
 import router from "./routes/route.js";
 import dbConfig from "./config/db.js";
 const app = express();
-const PORT = process.env.PORT || 3000
-
+const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
   origin: 'https://testbscs2b.netlify.app',
