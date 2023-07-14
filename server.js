@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: 'https://testbscs2b.netlify.app',
+  origin: 'http://localhost:5173',
   credentials: true,
 };
 // Middleware

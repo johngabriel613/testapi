@@ -7,8 +7,8 @@ const setSession = () => {
       resave: false,
       saveUninitialized: false,
       cookie:{
-        sameSite: "none",
-        secure:true,
+        sameSite: "Lax",
+        secure:false,
         httpOnly:true,
         maxAge: 24 * 60 * 60 * 1000
       }
