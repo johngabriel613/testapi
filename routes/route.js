@@ -8,6 +8,7 @@ import { getPsu, addPsu, getPsuById } from '../controllers/psuController.js';
 
 const router = express.Router();
 
+// get user
 router.get('/users', getUsers)
 router.get('/users/:linkId', getUserById)
 router.get('/users/:userId/component', getUserComponent)
