@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: ['https://testbscs2b.netlify.app', 'https://pccheckr.vercel.app', 'http://localhost:5173'],
+  origin: ['https://pccheckr.onrender.com','https://testbscs2b.netlify.app', 'https://pccheckr.vercel.app', 'http://localhost:5173'],
   credentials: true,
 };
 // Middleware
