@@ -1,13 +1,16 @@
 import psuModel from "../models/psuModel.js";
 
 export const getPsu = async (req, res) => {
-  const {wattage} = req.query;
+  const {wattage, search} = req.query;
   const query = {}
 
   if(wattage){
     query.output = { $gt: parseInt(wattage) };
   }
 
+  if (search) {
+    query.name = { $regex: search, $options: 'i' };
+  }
 
 
   try {

@@ -18,8 +18,8 @@ const motherboardModel = new mongoose.Schema({
         type:String,
         required:true,
     },
-    max_ram_freq:{
-      type:String,
+    ram_freq:{
+      type:[String],
       required:true,
     },
     ram_channel:{

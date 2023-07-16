@@ -9,11 +9,11 @@ export const getCpu = async (req, res) => {
   }
 
   if(ram_type){
-    query.ram_type = {$in: [ram_type]}
+    query.ram_type = { $in: ram_type.split(",") }
   }
 
   if(ram_freq){
-    query.max_ram_freq = ram_freq;
+    query.ram_freq = { $in: ram_freq.split(",") };
   }
 
   if (search) {

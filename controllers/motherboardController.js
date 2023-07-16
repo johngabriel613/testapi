@@ -13,7 +13,7 @@ export const getMotherboard = async(req, res) => {
   }
 
   if(ram_freq){
-    query.max_ram_freq = ram_freq;
+    query.ram_freq = { $in: ram_freq.split(",") };
   }
 
   if (search) {
